@@ -60,7 +60,6 @@ Response:
 ### DELETE /api/users/6499ae4a0ee57eabf6a72707
 Response:
 ![My picture sample 7](./02-Challenge/Assets/7.png)
-Please refer to the API routes section above for more examples of requests and responses.
 
 ## Walkthrough Video
 Link to the Walkthrough Video
