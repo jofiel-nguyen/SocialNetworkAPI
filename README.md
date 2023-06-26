@@ -46,56 +46,20 @@ Response:
 ![My picture sample 1](./02-Challenge/Assets/1.png)
 ### GET /api/users/6499ae4a0ee57eabf6a72706
 Response:
-![My picture sample 2](./02-Challenge//Assets/2.png)
-POST /api/users
+![My picture sample 2](./02-Challenge/Assets/2.png)
+### POST /api/users
 Request body:
-
-json
-
-{
-  "username": "example",
-  "email": "example@example.com"
-}
+![My picture sample 3](./02-Challenge/Assets/3.png)
 Response:
-
-json
-
-{
-  "_id": "6499ae4a0ee57eabf6a72707",
-  "username": "example",
-  "email": "example@example.com",
-  "thoughts": [],
-  "friends": [],
-  "friendCount": 0
-}
-PUT /api/users/6499ae4a0ee57eabf6a72707
+![My picture sample 4](./02-Challenge/Assets/4.png)
+### PUT /api/users/6499ae4a0ee57eabf6a72707
 Request body:
-
-json
-
-{
-  "username": "newexample"
-}
+![My picture sample 5](./02-Challenge/Assets/5.png)
 Response:
-
-json
-
-{
-  "_id": "6499ae4a0ee57eabf6a72707",
-  "username": "newexample",
-  "email": "example@example.com",
-  "thoughts": [],
-  "friends": [],
-  "friendCount": 0
-}
-DELETE /api/users/6499ae4a0ee57eabf6a72707
+![My picture sample 6](./02-Challenge/Assets/6.png)
+### DELETE /api/users/6499ae4a0ee57eabf6a72707
 Response:
-
-json
-
-{
-  "message": "User and associated thoughts deleted!"
-}
+![My picture sample 7](./02-Challenge/Assets/7.png)
 Please refer to the API routes section above for more examples of requests and responses.
 
 ## Walkthrough Video
