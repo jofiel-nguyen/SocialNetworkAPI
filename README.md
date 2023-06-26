@@ -43,10 +43,10 @@ Here are some example requests and responses for the API routes:
 
 ### GET /api/users
 Response:
-[![this is sample picture1 ]](./02-Challenge/Assets/1.png)
+![this is sample picture1 ](./02-Challenge/Assets/1.png)
 ### GET /api/users/6499ae4a0ee57eabf6a72706
 Response:
-[![this is sample picture 2]](./02-Challenge/Assets/2.png)
+![this is sample picture 2](./02-Challenge/Assets/2.png)
 POST /api/users
 Request body:
 
