@@ -41,42 +41,12 @@ DELETE /api/thoughts/:thoughtId/reactions: Remove a reaction by its reactionId f
 ## Examples
 Here are some example requests and responses for the API routes:
 
-GET /api/users
+### GET /api/users
 Response:
-
-json
-
-[
-  {
-    "_id": "6499ae4a0ee57eabf6a72706",
-    "username": "lernantino",
-    "email": "lernantino@gmail.com",
-    "thoughts": [],
-    "friends": [],
-    "friendCount": 0
-  },
-  {
-    "_id": "6499ae4a0ee57eabf6a72707",
-    "username": "example",
-    "email": "example@example.com",
-    "thoughts": ["6499afe10ee57eabf6a7270a"],
-    "friends": [],
-    "friendCount": 0
-  }
-]
-GET /api/users/6499ae4a0ee57eabf6a72706
+[![this is sample picture1 ]](./02-Challenge/Assets/1.png)
+### GET /api/users/6499ae4a0ee57eabf6a72706
 Response:
-
-json
-
-{
-  "_id": "6499ae4a0ee57eabf6a72706",
-  "username": "lernantino",
-  "email": "lernantino@gmail.com",
-  "thoughts": [],
-  "friends": [],
-  "friendCount": 0
-}
+[![this is sample picture 2]](./02-Challenge/Assets/2.png)
 POST /api/users
 Request body:
 
