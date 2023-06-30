@@ -25,15 +25,14 @@ const userController = {
   // GET a single user by ID
   getUserById({ params }, res) {
     User.findOne({ _id: params.userId })
+    .select('-__v')
       .populate({
         path: 'thoughts',
         select: '-__v'
       })
       .populate({
         path: 'friends',
-        select: '-__v'
       })
-      .select('-__v')
       .then(userData => {
         if (!userData) {
           res.status(404).json({ message: 'No user found with this id!' });
@@ -125,7 +124,7 @@ const userController = {
           res.status(404).json({ message: 'No user found with this id!' });
           return;
         }
-        res.json(userData);
+        res.json({ message: 'Friend was deleted successfull!' });
       })
       .catch(err => {
         console.log(err);
