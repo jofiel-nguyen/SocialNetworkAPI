@@ -62,10 +62,11 @@ Response:
 ![My picture sample 7](./02-Challenge/Assets/7.png)
 
 ## Walkthrough Video
-Link to the Walkthrough Video
-
+Link to the Walkthrough Video: https://drive.google.com/file/d/1B1i5n8IBTla7XLtPjG79XANmvKmnE57P/view?usp=drive_link
+## Links
+This is my github link:https://github.com/nhunguyen-debug/Nosql-for-rice.git
 ## Credits
-Express.js: https://www.npmjs.com/package/express
+Express.js: https://www.npmjs.com/package/express<br>
 Mongoose: https://www.npmjs.com/package/mongoose
 ## License
 This project is licensed under the MIT License.
