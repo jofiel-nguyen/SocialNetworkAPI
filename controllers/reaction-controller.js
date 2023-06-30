@@ -2,13 +2,14 @@ const Thought = require('../models/thought');
 const Reaction = require('../models/reaction');
 
 const reactionController = {
-  // Add a reaction to a thought
   addReaction({ params, body }, res) {
     try {
-      const parsedBody = JSON.parse(body);
+      const { reactionBody, username } = body; // Destructure the reactionBody and username from the request body
+      const newReaction = { reactionBody, username }; // Create a new reaction object
+  
       Thought.findOneAndUpdate(
         { _id: params.thoughtId },
-        { $push: { reactions: parsedBody } },
+        { $push: { reactions: newReaction } }, // Use the newReaction object
         { new: true, runValidators: true }
       )
         .then((thoughtData) => {
@@ -23,6 +24,7 @@ const reactionController = {
       res.status(400).json({ message: 'Invalid JSON payload' });
     }
   },
+  
 
   // Remove a reaction from a thought
   removeReaction({ params }, res) {
