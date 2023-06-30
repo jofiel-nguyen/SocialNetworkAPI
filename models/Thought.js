@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+const moment = require('moment');
 
 const { Schema } = mongoose;
 
@@ -13,10 +14,15 @@ const thoughtSchema = new Schema(
     createdAt: {
       type: Date,
       default: Date.now,
-      get: (createdAt) => new Date(createdAt).toISOString()
+      get: (createdAt) => moment(createdAt).format('MM-DD-YYYY')
     },
     username: {
       type: String,
+      required: true
+    },
+    userId: {
+      type: Schema.Types.ObjectId,
+      ref: 'User',
       required: true
     },
     reactions: [
