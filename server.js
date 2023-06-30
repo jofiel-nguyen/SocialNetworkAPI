@@ -26,7 +26,7 @@ mongoose.connect('mongodb://localhost/social-network-api', {
 // Routes
 app.use('/api/users', require('./routes/api/user-routes'));
 app.use('/api/thoughts', require('./routes/api/thought-routes'));
-app.use('/api/reactions', require('./routes/api/reaction-routes'));
+app.use('/api/:thoughtId/reactions', require('./routes/api/reaction-routes'));
 
 // Default route
 app.use((req, res) => {
